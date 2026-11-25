@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rakazo Guide: Setup, Self-Hosting &amp; Tips for the Open-Source Grok Bot Alternative</title>
+<meta name="description" content="An independent blog about Rakazo, the open-source, self-hosted Grok Bot alternative. Plain-English install guides, self-hosting tips, features and comparisons.">
+<link rel="canonical" href="https://rakazo.org/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rakazo Guide — the independent Rakazo blog">
+<meta property="og:description" content="Install, self-host and get the most out of Rakazo, the open-source Grok Bot alternative.">
+<meta property="og:url" content="https://rakazo.org/">
+<meta property="og:image" content="https://rakazo.org/images/rakazo-homepage-annotated.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f97316">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Rakazo Guide","url":"https://rakazo.org/","description":"An independent blog about Rakazo, the open-source, self-hosted Grok Bot alternative."}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="Rakazo Guide home">
+      <span class="logo" aria-hidden="true">R</span>
+      <span>Rakazo<span class="muted">Guide</span></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#what">What is it</a>
+      <a href="#install">Install</a>
+      <a href="#guides">Guides</a>
+      <a href="#compare">Compare</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" href="https://github.com/elie222/rakazo" rel="noopener" target="_blank">GitHub ↗</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Independent Rakazo blog · updated Nov 2026</p>
+        <h1>Run your own AI teammates with <span class="hl">Rakazo</span></h1>
+        <p class="lead">Rakazo is the open-source, self-hosted alternative to Grok Bot: bots with their own memory, routines and computer, running on your machine with your model. This site explains how to install it, host it and use it well, in plain English.</p>
+        <div class="cta-row">
+          <a class="btn" href="#install">Install in 3 steps</a>
+          <a class="btn btn-ghost" href="#what">What is Rakazo?</a>
+        </div>
+        <div class="cmd" role="group" aria-label="Install command">
+          <code id="cmd">curl -fsSLO https://raw.githubusercontent.com/elie222/rakazo/main/infra/compose/install-images.sh &amp;&amp; bash install-images.sh</code>
+          <button type="button" class="copy" data-copy="cmd" aria-label="Copy install command">Copy</button>
+        </div>
+      </div>
+      <ul class="facts" aria-label="Rakazo at a glance">
+        <li><strong>9.8k</strong><span>GitHub stars</span></li>
+        <li><strong>Apache-2.0</strong><span>Open-source license</span></li>
+        <li><strong>5</strong><span>Platforms: web, Mac, Windows, Linux, mobile</span></li>
+        <li><strong>16</strong><span>UI languages</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="what" class="section">
+    <div class="wrap two-col">
+      <div>
+        <p class="kicker">01 · The basics</p>
+        <h2>What is Rakazo?</h2>
+        <p>Rakazo gives you persistent AI "bots" that work like teammates. Each bot has a job, remembers what it learns, runs on a schedule, and gets its own computer (a browser, terminal, files and a full desktop) inside a sandbox.</p>
+        <p>You bring the model: Claude, ChatGPT, OpenRouter, Grok, or a local model through Ollama or LM Studio. Each bot can use a different one.</p>
+        <ol class="steps-list">
+          <li><b>Get started</b>: use the hosted app or run it yourself.</li>
+          <li><b>Set up with your agent</b>: copy a prompt and let your coding agent install it.</li>
+          <li><b>Star count</b>: the project is very active, with commits landing daily.</li>
+        </ol>
+      </div>
+      <figure class="shot">
+        <img src="/images/rakazo-homepage-annotated.webp" width="1280" height="800" alt="Annotated screenshot of the official rakazo.com homepage with arrows pointing to Get started, the agent setup prompt and the GitHub star count" loading="lazy">
+        <figcaption>The official site, rakazo.com, with the three things to notice first.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap">
+      <p class="kicker">02 · Features</p>
+      <h2>What your bots can do</h2>
+      <div class="grid">
+        <article class="card"><span class="ic" aria-hidden="true">🖥️</span><h3>Every bot gets a computer</h3><p>Browser, terminal and desktop. Watch it work, take control to sign in, then hand it back.</p></article>
+        <article class="card"><span class="ic" aria-hidden="true">⏰</span><h3>Routines</h3><p>Run on a schedule, from an email, a webhook or a GitHub event, and see every run.</p></article>
+        <article class="card"><span class="ic" aria-hidden="true">🧠</span><h3>Memory</h3><p>Bots keep what they learn and share it with the rest of the team.</p></article>
+        <article class="card"><span class="ic" aria-hidden="true">👥</span><h3>Bots that work together</h3><p>Put bots in a group, @mention them, and they split the work and check each other.</p></article>
+        <article class="card"><span class="ic" aria-hidden="true">🔌</span><h3>Thousands of apps + MCP</h3><p>Gmail, Slack, GitHub, Notion and Linear, plus your own MCP servers and OpenAPI tools.</p></article>
+        <article class="card"><span class="ic" aria-hidden="true">📄</span><h3>Pages</h3><p>Bots build live dashboards and docs you can open full screen and share by link.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="install" class="section">
+    <div class="wrap">
+      <p class="kicker">03 · Quick start</p>
+      <h2>Install Rakazo in 3 steps</h2>
+      <p class="sub">You need Docker Engine with the Compose plugin, curl and OpenSSL. No clone or Node.js install is required.</p>
+      <div class="two-col reverse">
+        <figure class="shot">
+          <img src="/images/quickstart-annotated.webp" width="1050" height="520" alt="Annotated screenshot of the Quick start section of the Rakazo README showing the install command, the copy button and the local URL to open" loading="lazy">
+          <figcaption>The Quick start section of the official README.</figcaption>
+        </figure>
+        <ol class="steps">
+          <li><h3>Run the installer</h3><p>Make a folder, download <code>install-images.sh</code> and run it. It writes a <code>.env</code> with random secrets and starts everything with Docker Compose.</p></li>
+          <li><h3>Open the app</h3><p>Go to <code>http://127.0.0.1:5173</code> and create your account.</p></li>
+          <li><h3>Connect a model</h3><p>Sign in with a Claude or ChatGPT plan, add an API key, or point it at a local model. Then create your first bot.</p></li>
+        </ol>
+      </div>
+      <div class="note"><b>Want it always on?</b> Run the same installer on a VPS with 2 vCPUs and 4 GB of RAM, put HTTPS in front of port 5173, and connect from the desktop or mobile app.</div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap two-col">
+      <figure class="shot">
+        <img src="/images/github-repo-annotated.webp" width="1280" height="800" alt="Annotated screenshot of the elie222/rakazo GitHub repository with arrows to the star count, the Code button and the official website link" loading="lazy">
+        <figcaption>The <code>elie222/rakazo</code> repository on GitHub.</figcaption>
+      </figure>
+      <div>
+        <p class="kicker">04 · Source code</p>
+        <h2>Finding your way around the repo</h2>
+        <p>Rakazo is a TypeScript monorepo. Knowing the layout helps when you read the docs or want to contribute.</p>
+        <dl class="tree">
+          <dt>apps/</dt><dd>Web, API, worker, desktop (Electron), mobile (Expo) and the public website</dd>
+          <dt>packages/</dt><dd>Domain logic, contracts, persistence, adapters and UI</dd>
+          <dt>infra/</dt><dd>Docker Compose files and computer images</dd>
+          <dt>docs/</dt><dd>Self-hosting, models, backups, upgrades and comparisons</dd>
+        </dl>
+        <p class="small">Built with React 19, Vite, Tailwind, Hono, oRPC, PostgreSQL, Prisma and Better Auth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="guides" class="section">
+    <div class="wrap">
+      <p class="kicker">05 · On the blog</p>
+      <h2>Guides we're writing</h2>
+      <div class="grid posts">
+        <article class="post"><span class="tag">Self-hosting</span><h3>Rakazo on a $5 VPS with HTTPS and Caddy</h3><p>From a blank server to bots that stay on when your laptop is closed.</p><span class="soon">Coming soon</span></article>
+        <article class="post"><span class="tag">Models</span><h3>Using Claude Pro or ChatGPT Plus with Rakazo</h3><p>Connect a subscription instead of paying per API call.</p><span class="soon">Coming soon</span></article>
+        <article class="post"><span class="tag">Local AI</span><h3>Fully private Rakazo with Ollama</h3><p>Run bots on a local model so nothing leaves your machine.</p><span class="soon">Coming soon</span></article>
+        <article class="post"><span class="tag">Routines</span><h3>5 routines worth setting up on day one</h3><p>Inbox sweeps, morning briefings, PR reviews and more.</p><span class="soon">Coming soon</span></article>
+        <article class="post"><span class="tag">Sandboxes</span><h3>Docker vs E2B vs Daytona computers</h3><p>Which sandbox provider fits your setup and budget.</p><span class="soon">Coming soon</span></article>
+        <article class="post"><span class="tag">Mobile</span><h3>Talking to your bots from iPhone and Android</h3><p>Connect the mobile app to your own server.</p><span class="soon">Coming soon</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="compare" class="section alt">
+    <div class="wrap">
+      <p class="kicker">06 · Comparisons</p>
+      <h2>Rakazo vs hosted AI agents</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col"></th><th scope="col">Rakazo</th><th scope="col">Typical hosted bot</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Source code</th><td class="yes">Open, Apache-2.0</td><td>Closed</td></tr>
+            <tr><th scope="row">Where it runs</th><td class="yes">Your machine, VPS or cloud</td><td>Vendor's servers</td></tr>
+            <tr><th scope="row">Model choice</th><td class="yes">Any, per bot, incl. local</td><td>Vendor's model</td></tr>
+            <tr><th scope="row">Own computer per bot</th><td class="yes">Yes, sandboxed</td><td>Varies</td></tr>
+            <tr><th scope="row">Price</th><td class="yes">Free to self-host</td><td>Subscription</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">The official docs also compare Rakazo with Grok Bot, Muse, Dots, Instinct, OpenClaw and Hermes Agent.</p>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="wrap narrow">
+      <p class="kicker">07 · FAQ</p>
+      <h2>Common questions</h2>
+      <details><summary>Is Rakazo free?</summary><p>Yes. The code is Apache-2.0 and free to self-host. You pay only for the model you use and any cloud sandbox or server you choose.</p></details>
+      <details><summary>Can I use my Claude or ChatGPT subscription?</summary><p>Yes. In model settings you can sign in with a Claude Pro/Max plan or an eligible ChatGPT plan, or connect an API key.</p></details>
+      <details><summary>Can I run it fully offline with a local model?</summary><p>Point a bot at any local OpenAI-compatible server such as Ollama or LM Studio. Each bot can use a different model.</p></details>
+      <details><summary>Does it work on my phone?</summary><p>Yes. There are apps for web, macOS, Windows, Linux, iPhone, iPad and Android, all talking to the same server.</p></details>
+      <details><summary>Is this the official Rakazo site?</summary><p>No. Rakazo Guide is an independent fan blog. The official project lives at <a href="https://rakazo.com" rel="noopener" target="_blank">rakazo.com</a> and <a href="https://github.com/elie222/rakazo" rel="noopener" target="_blank">github.com/elie222/rakazo</a>.</p></details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="/"><span class="logo" aria-hidden="true">R</span><span>Rakazo<span class="muted">Guide</span></span></a>
+      <p class="small">An independent blog about Rakazo. Not affiliated with or endorsed by the Rakazo project or its maintainers. Screenshots are of public pages, annotated for teaching.</p>
+    </div>
+    <ul>
+      <li><a href="https://rakazo.com" rel="noopener" target="_blank">Official site</a></li>
+      <li><a href="https://github.com/elie222/rakazo" rel="noopener" target="_blank">GitHub repo</a></li>
+      <li><a href="#install">Install guide</a></li>
+    </ul>
+  </div>
+  <p class="wrap small copy-line">© 2026 rakazo.org</p>
+</footer>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = document.getElementById(b.dataset.copy).textContent;
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () {
+      b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1600);
+    }).catch(function () {});
+  });
+});
+</script>
+</body>
+</html>
