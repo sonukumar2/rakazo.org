@@ -2,6 +2,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "rakazo-org",
   "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "rakazo.org", "custom_domain": true },
+    { "pattern": "www.rakazo.org", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page"
