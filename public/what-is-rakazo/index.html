@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5QCB4236"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What is Rakazo? A Beginner's Guide to the Open-Source AI Bot</title>
+<meta name="description" content="Rakazo explained in plain English: what the open-source AI bot does, its main features, what it costs, who it's for and how to start. With annotated screenshots.">
+<link rel="canonical" href="https://rakazo.org/what-is-rakazo/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What is Rakazo? A beginner's guide">
+<meta property="og:description" content="The free, open-source AI bot you run yourself, explained simply with real screenshots.">
+<meta property="og:url" content="https://rakazo.org/what-is-rakazo/">
+<meta property="og:image" content="https://rakazo.org/images/what-is-rakazo/what-is-rakazo-featured.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-11-27">
+<meta property="article:modified_time" content="2026-11-27">
+<meta name="theme-color" content="#f97316">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Article","headline":"What is Rakazo? A beginner's guide to the open-source AI bot","description":"Rakazo explained in plain English: what it does, its main features, what it costs, who it's for and how to start.","image":"https://rakazo.org/images/what-is-rakazo/what-is-rakazo-featured.png","datePublished":"2026-11-27","dateModified":"2026-11-27","author":{"@type":"Organization","name":"Rakazo Guide","url":"https://rakazo.org/"},"publisher":{"@type":"Organization","name":"Rakazo Guide","url":"https://rakazo.org/"},"mainEntityOfPage":"https://rakazo.org/what-is-rakazo/"},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rakazo.org/"},{"@type":"ListItem","position":2,"name":"What is Rakazo?","item":"https://rakazo.org/what-is-rakazo/"}]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is Rakazo free?","acceptedAnswer":{"@type":"Answer","text":"The software is free and open source under the Apache-2.0 license. You only pay for the AI model you connect, unless you use a free local model, and for a server if you choose to run it on one."}},
+{"@type":"Question","name":"Do I need to know how to code to use Rakazo?","acceptedAnswer":{"@type":"Answer","text":"No. You talk to bots in plain words. Running it yourself means copying one install command and having Docker installed, which a step-by-step guide can walk you through."}},
+{"@type":"Question","name":"Is Rakazo safe?","acceptedAnswer":{"@type":"Answer","text":"Each bot works inside its own sandboxed computer, and you decide which actions need your approval. When you self-host, your data stays on your machine or server."}},
+{"@type":"Question","name":"Which AI model should I use with Rakazo?","acceptedAnswer":{"@type":"Answer","text":"If you already pay for Claude Pro or Max or an eligible ChatGPT plan, sign in with it. Otherwise use an API key from a provider such as OpenRouter, or run a free local model with Ollama or LM Studio."}},
+{"@type":"Question","name":"Is rakazo.org the official Rakazo website?","acceptedAnswer":{"@type":"Answer","text":"No. rakazo.org is an independent beginner's guide. The official site is rakazo.com and the source code is at github.com/elie222/rakazo."}}
+]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="Rakazo Guide home">
+      <span class="logo" aria-hidden="true">R</span>
+      <span>Rakazo<span class="muted">Guide</span></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="/what-is-rakazo/" aria-current="page">What is it</a>
+      <a href="/#install">Install</a>
+      <a href="/#guides">Guides</a>
+      <a href="/#compare">Compare</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" href="https://github.com/elie222/rakazo" rel="noopener" target="_blank">GitHub ↗</a>
+  </div>
+</header>
+
+<main id="main" class="article">
+  <div class="wrap article-wrap">
+
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">›</span><span>What is Rakazo?</span></nav>
+
+    <header class="article-head">
+      <p class="eyebrow">Beginner's guide</p>
+      <h1>What is Rakazo? A beginner's guide to the open-source AI bot</h1>
+      <p class="lead">Rakazo lets you run your own team of AI helpers, called bots, that remember things, work on a schedule and use a computer just like you do. This guide explains it in plain words, with real screenshots.</p>
+      <p class="byline">Updated 27 Nov 2026 · 8 min read</p>
+    </header>
+
+    <aside class="tldr" aria-label="The short answer">
+      <h2>The short answer</h2>
+      <p><b>Rakazo is a free, open-source app for running AI bots that do real work for you.</b> You give each bot a job, like "sort my email" or "prepare a morning briefing". The bot remembers what it learns, can work on a schedule, and has its own computer to click, type and browse with.</p>
+      <ul>
+        <li><b>Free and open source.</b> The code is public under the Apache-2.0 license.</li>
+        <li><b>Runs where you want.</b> On your own computer, on a server, or in the hosted version.</li>
+        <li><b>Any AI model.</b> Claude, ChatGPT, Grok, OpenRouter, or a free local model.</li>
+        <li><b>Works everywhere.</b> Web, Mac, Windows, Linux, iPhone and Android.</li>
+      </ul>
+    </aside>
+
+    <figure class="featured">
+      <img src="/images/what-is-rakazo/what-is-rakazo-featured.webp" width="1200" height="630" alt="What is Rakazo? Title card next to a real screenshot of the Rakazo app showing a list of bots and a chat with the Inbox Manager bot">
+    </figure>
+
+    <nav class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ol>
+        <li><a href="#one-picture">Rakazo in one picture</a></li>
+        <li><a href="#words">Words you'll see</a></li>
+        <li><a href="#jobs">What a bot can do for you</a></li>
+        <li><a href="#features">The main features</a></li>
+        <li><a href="#control">You stay in control</a></li>
+        <li><a href="#devices">Where you can use it</a></li>
+        <li><a href="#cost">Is Rakazo free?</a></li>
+        <li><a href="#who">Who Rakazo is for</a></li>
+        <li><a href="#vs">Rakazo vs Grok Bot</a></li>
+        <li><a href="#start">How to get started</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </nav>
+
+    <section id="one-picture">
+      <h2>Rakazo in one picture</h2>
+      <p>This is the Rakazo app. If you've used a chat app, it will feel familiar. The difference is that each chat is with a bot that has a job and can actually do it.</p>
+      <figure class="shot">
+        <a class="zoom" href="/images/what-is-rakazo/rakazo-app-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/what-is-rakazo/rakazo-app-annotated.webp" width="1280" height="766" alt="Annotated screenshot of the Rakazo app. Arrow 1 points to the list of bots on the left. Arrow 2 points to the message box. Arrow 3 points to the panel showing the bot's own computer." loading="lazy"></a>
+        <figcaption>Tap any screenshot to see it full size. The Rakazo app, from the official rakazo.com homepage.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Your team of bots.</b> Each bot on the left has its own job, such as Inbox Manager, Sales Outbound or Expense Manager.</li>
+        <li><b>Tell a bot what to do in plain words.</b> Type a message like you would to a coworker. Here the user says "send nora's, I'll take the rest tomorrow".</li>
+        <li><b>The bot's own computer.</b> Bots work on a real desktop with a browser. You can watch it work, and click <i>Take control</i> if you need to sign in for it.</li>
+      </ol>
+    </section>
+
+    <section id="words">
+      <h2>Words you'll see</h2>
+      <p>A few terms come up again and again. Here is what they mean.</p>
+      <dl class="gloss">
+        <div><dt>Bot</dt><dd>An AI helper with one job, its own chats and its own memory. You can have as many as you like.</dd></div>
+        <div><dt>AI model</dt><dd>The "brain" a bot uses to think and write, for example Claude or ChatGPT. You choose it.</dd></div>
+        <div><dt>Computer</dt><dd>A safe, separate desktop where the bot clicks, types and browses. It can't touch the rest of your machine.</dd></div>
+        <div><dt>Routine</dt><dd>A task that runs by itself, such as "every weekday at 6am, tidy my inbox".</dd></div>
+        <div><dt>Self-hosted</dt><dd>You run Rakazo on your own computer or server, so you control the data and pay no subscription.</dd></div>
+        <div><dt>Integration</dt><dd>A connection to an app you use, such as Gmail, Slack, GitHub or Notion. MCP is a standard way to add more.</dd></div>
+        <div><dt>Approval</dt><dd>A check where the bot stops and asks you before doing something important, like sending an email.</dd></div>
+      </dl>
+    </section>
+
+    <section id="jobs">
+      <h2>What a bot can do for you</h2>
+      <p>Rakazo comes with ready-made bot templates. Pick one, then change it to fit how you work. You can also describe any job in your own words.</p>
+      <figure class="shot">
+        <a class="zoom" href="/images/what-is-rakazo/rakazo-bot-jobs-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/what-is-rakazo/rakazo-bot-jobs-annotated.webp" width="1280" height="660" alt="Annotated screenshot of the eight Rakazo bot templates. Arrow 1 points to the Inbox Manager template. Arrow 2 points to the Chief of Staff template." loading="lazy"></a>
+        <figcaption>The bot templates shown on rakazo.com.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Pick a ready-made job.</b> Inbox Manager sorts your email and drafts replies for you to check.</li>
+        <li><b>A bot that manages your other bots.</b> Chief of Staff prepares briefings and coordinates the rest of the team.</li>
+      </ol>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Template</th><th scope="col">What it does</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Inbox Manager</th><td>Sorts email and drafts replies</td></tr>
+            <tr><th scope="row">Sales Outbound</th><td>Researches prospects and drafts follow-ups</td></tr>
+            <tr><th scope="row">Talent Scout</th><td>Reviews job applications and shortlists candidates</td></tr>
+            <tr><th scope="row">Expense Manager</th><td>Matches receipts to payments</td></tr>
+            <tr><th scope="row">Coding Agent</th><td>Makes code changes on your computer</td></tr>
+            <tr><th scope="row">Account Manager</th><td>Prepares replies and tracks renewals</td></tr>
+            <tr><th scope="row">Paid Media</th><td>Reviews ad spend and reports changes</td></tr>
+            <tr><th scope="row">Chief of Staff</th><td>Prepares briefings and coordinates your bots</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>The main features</h2>
+      <p>Rakazo is more than a chatbot. These are the features that make a bot useful day to day.</p>
+      <figure class="shot">
+        <a class="zoom" href="/images/what-is-rakazo/rakazo-features-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/what-is-rakazo/rakazo-features-annotated.webp" width="1280" height="860" alt="Annotated screenshot of Rakazo's feature cards. Arrow 1 points to Works in your apps. Arrow 2 points to Remembers. Arrow 3 points to Wakes up on its own." loading="lazy"></a>
+        <figcaption>Rakazo's feature cards on rakazo.com.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Connects to your apps.</b> Gmail, GitHub, Notion, Slack, Google Calendar and more. The official docs list 1,400+ apps.</li>
+        <li><b>Remembers what it learns.</b> Tell a bot once that you prefer short replies, and it keeps that in memory.</li>
+        <li><b>Works on a schedule.</b> A bot can start on a timer, when an email arrives, when a GitHub issue opens, or from a webhook.</li>
+      </ol>
+      <div class="grid feat">
+        <article class="card"><h3>Learns by watching</h3><p>Show a bot a task once on its computer, and it saves the steps as a reusable skill.</p></article>
+        <article class="card"><h3>Teamwork</h3><p>Bots can hand work to each other and chat together in groups.</p></article>
+        <article class="card"><h3>Calls and meetings</h3><p>A bot can call you in the app, or join Zoom and Google Meet to take a transcript.</p></article>
+        <article class="card"><h3>Pages</h3><p>Bots build live dashboards and documents you can open full screen and share by link.</p></article>
+      </div>
+    </section>
+
+    <section id="control">
+      <h2>You stay in control</h2>
+      <p>Because you run Rakazo, you decide which AI it uses and what it's allowed to do without asking.</p>
+      <figure class="shot">
+        <a class="zoom" href="/images/what-is-rakazo/rakazo-control-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/what-is-rakazo/rakazo-control-annotated.webp" width="1280" height="570" alt="Annotated screenshot of Rakazo's self-hosted section. Arrow 1 points to the model picker. Arrow 2 points to an Approval required card with Approve and Deny buttons. Arrow 3 points to the list of supported models." loading="lazy"></a>
+        <figcaption>The "Self-hosted" section of rakazo.com.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Choose any AI model.</b> Each bot can use a different one, so a cheap model can sort email while a stronger one writes reports.</li>
+        <li><b>You approve risky actions.</b> Pick which actions need your OK. The bot pauses and shows Approve and Deny buttons.</li>
+        <li><b>Claude, ChatGPT, Grok or a free local model.</b> Use a subscription you already have, an API key, or Ollama and LM Studio on your own machine.</li>
+      </ol>
+    </section>
+
+    <section id="devices">
+      <h2>Where you can use it</h2>
+      <p>All the apps talk to the same Rakazo server, so your bots and chats follow you from your laptop to your phone.</p>
+      <figure class="shot shot-narrow">
+        <a class="zoom" href="/images/what-is-rakazo/rakazo-devices-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/what-is-rakazo/rakazo-devices-annotated.webp" width="830" height="470" alt="Annotated screenshot of the Rakazo platforms. Arrow 1 points to macOS, Windows and Linux. Arrow 2 points to iPhone, iPad and Android." loading="lazy"></a>
+        <figcaption>Supported platforms on rakazo.com.</figcaption>
+      </figure>
+      <p>You can also talk to bots from the chat apps you already use.</p>
+      <figure class="shot">
+        <a class="zoom" href="/images/what-is-rakazo/rakazo-chat-apps-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/what-is-rakazo/rakazo-chat-apps-annotated.webp" width="1280" height="410" alt="Annotated screenshot of Rakazo chat app support. Arrow 1 points to Slack, Microsoft Teams, iMessage, WhatsApp and Telegram. Arrow 2 points to a Slack message mentioning the Sales Outbound bot." loading="lazy"></a>
+        <figcaption>Chat apps that can reach your bots.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Chat from Slack, Teams, WhatsApp, Telegram or iMessage.</b> WhatsApp, Telegram and iMessage need the self-hosted version.</li>
+        <li><b>@mention a bot to hand it work.</b> It replies in the same thread, like a teammate would.</li>
+      </ol>
+    </section>
+
+    <section id="cost">
+      <h2>Is Rakazo free?</h2>
+      <p>The Rakazo software is free. What you may pay for depends on how you set it up.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Part</th><th scope="col">Free option</th><th scope="col">Paid option</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Rakazo software</th><td class="yes">Free, open source</td><td>Hosted version at app.rakazo.com (see <a href="https://rakazo.com/pricing" rel="noopener" target="_blank">rakazo.com/pricing</a>)</td></tr>
+            <tr><th scope="row">AI model</th><td class="yes">Local model with Ollama or LM Studio</td><td>Claude or ChatGPT subscription, or a pay-per-use API key</td></tr>
+            <tr><th scope="row">Where it runs</th><td class="yes">Your own computer</td><td>A server (VPS), so bots keep working when your computer is off</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">A server needs about 2 CPU cores and 4 GB of memory, per the official README.</p>
+    </section>
+
+    <section id="who">
+      <h2>Who Rakazo is for</h2>
+      <div class="fit">
+        <div class="fit-col good">
+          <h3>A good fit if you…</h3>
+          <ul>
+            <li>Want AI help with real tasks like email, research or reports, not just answers</li>
+            <li>Care about privacy and want your data on your own machine</li>
+            <li>Already pay for Claude or ChatGPT and want more out of it</li>
+            <li>Want to try different AI models without switching apps</li>
+          </ul>
+        </div>
+        <div class="fit-col meh">
+          <h3>Maybe not yet if you…</h3>
+          <ul>
+            <li>Only need a quick chatbot for questions</li>
+            <li>Don't want to install anything (try the hosted version instead)</li>
+            <li>Need a finished product with no rough edges. Rakazo is young and changes every day.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="vs">
+      <h2>Rakazo vs Grok Bot in 30 seconds</h2>
+      <p>Rakazo describes itself as an open-source alternative to Grok Bot. Here is the main difference.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col"></th><th scope="col">Rakazo</th><th scope="col">Grok Bot</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Source code</th><td class="yes">Public (Apache-2.0)</td><td>Not public</td></tr>
+            <tr><th scope="row">Where it runs</th><td class="yes">Your computer, your server, or hosted</td><td>The vendor's servers</td></tr>
+            <tr><th scope="row">AI model</th><td class="yes">Your choice, per bot</td><td>The vendor's model</td></tr>
+            <tr><th scope="row">Cost</th><td class="yes">Free to self-host</td><td>Subscription</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">A full comparison is coming soon.</p>
+    </section>
+
+    <section id="start">
+      <h2>How to get started</h2>
+      <p>There are two ways to start. Pick the one that matches how hands-on you want to be.</p>
+      <div class="paths">
+        <div class="path">
+          <span class="tag">Easiest</span>
+          <h3>Use the hosted version</h3>
+          <ol>
+            <li>Go to <a href="https://app.rakazo.com" rel="noopener" target="_blank">app.rakazo.com</a> and create an account.</li>
+            <li>Rakazo creates your first bot, called <b>Chief</b>.</li>
+            <li>Tell Chief its job in plain words. It asks for anything else it needs.</li>
+          </ol>
+        </div>
+        <div class="path">
+          <span class="tag">Free</span>
+          <h3>Run it yourself</h3>
+          <ol>
+            <li>Install Docker on your computer.</li>
+            <li>Run the one-line installer from the <a href="/#install">install steps</a>.</li>
+            <li>Open <code>http://127.0.0.1:5173</code>, create an account and connect a model.</li>
+          </ol>
+        </div>
+      </div>
+      <figure class="shot">
+        <a class="zoom" href="/images/what-is-rakazo/rakazo-docs-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/what-is-rakazo/rakazo-docs-annotated.webp" width="1280" height="600" alt="Annotated screenshot of the official Rakazo Getting started docs. Arrow 1 points to the first three steps. Arrow 2 points to the Get started button for the hosted version." loading="lazy"></a>
+        <figcaption>The official Getting started page at rakazo.com/docs.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>First steps.</b> The official docs use the same three steps: sign in, meet Chief, then give it a job.</li>
+        <li><b>Hosted version starts here.</b> The blue <i>Get started</i> button opens the sign-up page.</li>
+      </ol>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <details><summary>Is Rakazo free?</summary><p>The software is free and open source under the Apache-2.0 license. You only pay for the AI model you connect, unless you use a free local model, and for a server if you choose to run it on one.</p></details>
+      <details><summary>Do I need to know how to code?</summary><p>No. You talk to bots in plain words. Running it yourself means copying one install command and having Docker installed. Our step-by-step install guides are on the way.</p></details>
+      <details><summary>Is Rakazo safe?</summary><p>Each bot works inside its own sandboxed computer, and you decide which actions need your approval. When you self-host, your data stays on your machine or server.</p></details>
+      <details><summary>Which AI model should I use?</summary><p>If you already pay for Claude Pro or Max or an eligible ChatGPT plan, sign in with it. Otherwise use an API key from a provider such as OpenRouter, or run a free local model with Ollama or LM Studio.</p></details>
+      <details><summary>Is it spelled Rakazo, Rakazoo or Rakazzo?</summary><p>The correct name is <b>Rakazo</b>, with one "z" and one "o" at the end.</p></details>
+      <details><summary>Is rakazo.org the official Rakazo website?</summary><p>No. rakazo.org is an independent beginner's guide. The official site is <a href="https://rakazo.com" rel="noopener" target="_blank">rakazo.com</a> and the source code is at <a href="https://github.com/elie222/rakazo" rel="noopener" target="_blank">github.com/elie222/rakazo</a>.</p></details>
+    </section>
+
+    <section class="next">
+      <h2>What to read next</h2>
+      <div class="grid next-grid">
+        <a class="post link-card" href="/#install"><span class="tag">Install</span><h3>Install Rakazo in 3 steps</h3><p>The quick-start install with one command.</p></a>
+        <a class="post link-card" href="/#compare"><span class="tag">Compare</span><h3>Rakazo vs hosted AI agents</h3><p>How it stacks up at a glance.</p></a>
+        <a class="post link-card" href="https://rakazo.com/docs/" rel="noopener" target="_blank"><span class="tag">Official</span><h3>Rakazo docs ↗</h3><p>The project's own documentation.</p></a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="/"><span class="logo" aria-hidden="true">R</span><span>Rakazo<span class="muted">Guide</span></span></a>
+      <p class="small">Beginner-friendly guides to Rakazo, the open-source AI bot. Screenshots are of public pages, annotated for teaching.</p>
+    </div>
+    <ul>
+      <li><a href="/what-is-rakazo/">What is Rakazo?</a></li>
+      <li><a href="https://rakazo.com" rel="noopener" target="_blank">Official site</a></li>
+      <li><a href="https://github.com/elie222/rakazo" rel="noopener" target="_blank">GitHub repo</a></li>
+    </ul>
+  </div>
+  
+<div class="footer-bar"><div class="wrap"><span>© 2026 rakazo.org</span><span>Independent guide, not affiliated with Rakazo</span></div></div>
+</footer>
+</body>
+</html>
