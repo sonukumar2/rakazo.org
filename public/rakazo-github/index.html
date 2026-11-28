@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5QCB4236"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rakazo GitHub Guide: Official Repo, Downloads, Releases and Help</title>
+<meta name="description" content="A beginner's guide to the Rakazo GitHub repo (elie222/rakazo): find the official repo, download the Mac, Windows, Linux and Android apps, clone the code and report bugs. With annotated screenshots.">
+<link rel="canonical" href="https://rakazo.org/rakazo-github/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rakazo on GitHub: a step-by-step guide">
+<meta property="og:description" content="Find the official repo, download the apps and get help, explained simply with real screenshots.">
+<meta property="og:url" content="https://rakazo.org/rakazo-github/">
+<meta property="og:image" content="https://rakazo.org/images/rakazo-github/rakazo-github-featured.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-11-28">
+<meta property="article:modified_time" content="2026-11-28">
+<meta name="theme-color" content="#f97316">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Article","headline":"Rakazo on GitHub: a beginner's guide to the elie222/rakazo repo","description":"Find the official Rakazo repo, download the apps from Releases, clone the code and report bugs.","image":"https://rakazo.org/images/rakazo-github/rakazo-github-featured.png","datePublished":"2026-11-28","dateModified":"2026-11-28","author":{"@type":"Organization","name":"Rakazo Guide","url":"https://rakazo.org/"},"publisher":{"@type":"Organization","name":"Rakazo Guide","url":"https://rakazo.org/"},"mainEntityOfPage":"https://rakazo.org/rakazo-github/"},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rakazo.org/"},{"@type":"ListItem","position":2,"name":"Rakazo on GitHub","item":"https://rakazo.org/rakazo-github/"}]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is the official Rakazo GitHub repo?","acceptedAnswer":{"@type":"Answer","text":"The official repo is github.com/elie222/rakazo. Other accounts that show a copy of Rakazo are forks."}},
+{"@type":"Question","name":"Do I need a GitHub account to use Rakazo?","acceptedAnswer":{"@type":"Answer","text":"No. You can read the code, download the apps and run the installer without signing in. You only need an account to star the repo, watch for releases or open an issue."}},
+{"@type":"Question","name":"Which Rakazo file should I download for my Mac?","acceptedAnswer":{"@type":"Answer","text":"Download the file ending in -universal.dmg. It works on both Apple silicon (M-series) and Intel Macs."}},
+{"@type":"Question","name":"Where is the Rakazo iPhone app?","acceptedAnswer":{"@type":"Answer","text":"The iPhone and iPad app is not on GitHub Releases. Get it from the Download page on rakazo.com."}},
+{"@type":"Question","name":"How do I report a Rakazo security problem?","acceptedAnswer":{"@type":"Answer","text":"Email security@rakazo.com. Do not open a public GitHub issue for security bugs."}}
+]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="Rakazo Guide home">
+      <span class="logo" aria-hidden="true">R</span>
+      <span>Rakazo<span class="muted">Guide</span></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="/what-is-rakazo/">What is it</a>
+      <a href="/#install">Install</a>
+      <a href="/rakazo-github/" aria-current="page">GitHub</a>
+      <a href="/#guides">Guides</a>
+      <a href="/#compare">Compare</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" href="https://github.com/elie222/rakazo" rel="noopener" target="_blank">GitHub ↗</a>
+  </div>
+</header>
+
+<main id="main" class="article">
+  <div class="wrap article-wrap">
+
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">›</span><span>Rakazo on GitHub</span></nav>
+
+    <header class="article-head">
+      <p class="eyebrow">Step-by-step guide</p>
+      <h1>Rakazo on GitHub: a beginner's guide to the official repo</h1>
+      <p class="lead">Everything about Rakazo lives on GitHub: the code, the app downloads, the release notes and the bug reports. This guide shows you where each one is and what to click, with real screenshots.</p>
+      <p class="byline">Updated 28 Nov 2026 · Checked against Rakazo v0.16.0 · 9 min read</p>
+    </header>
+
+    <figure class="featured">
+      <img src="/images/rakazo-github/rakazo-github-featured.webp" width="1200" height="630" alt="Rakazo on GitHub title card next to a real screenshot of the elie222/rakazo repository page">
+    </figure>
+
+    <nav class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ol>
+        <li><a href="#official">Find the official repo</a></li>
+        <li><a href="#need">What do you need from GitHub?</a></li>
+        <li><a href="#desktop">Download the desktop app</a></li>
+        <li><a href="#android">Download the Android app</a></li>
+        <li><a href="#server">Run Rakazo on a server</a></li>
+        <li><a href="#clone">Clone or download the code</a></li>
+        <li><a href="#map">What's inside the repo</a></li>
+        <li><a href="#updates">Stay up to date</a></li>
+        <li><a href="#help">Get help and report bugs</a></li>
+        <li><a href="#license">What the license lets you do</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </nav>
+
+    <section id="official">
+      <h2>1. Find the official repo</h2>
+      <p>Go to <code>github.com/elie222/rakazo</code>. "elie222" is the GitHub account of Elie Steinbock, who created Rakazo. Check these three things to be sure you're in the right place.</p>
+      <figure class="shot">
+        <a class="zoom" href="/images/rakazo-github/official-repo-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/rakazo-github/official-repo-annotated.webp" width="1280" height="490" alt="Annotated screenshot of the elie222/rakazo GitHub page. Arrow 1 points to the elie222 / rakazo name. Arrow 2 points to the 10k star count. Arrow 3 points to the rakazo.com link in the About box." loading="lazy"></a>
+        <figcaption>Tap any screenshot to see it full size. The official repo page, 28 Nov 2026.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>The name reads <code>elie222 / rakazo</code>.</b> Anything else is a copy.</li>
+        <li><b>It has about 10,000 stars.</b> Copies have only a handful.</li>
+        <li><b>The About box links to rakazo.com</b>, the official website.</li>
+      </ol>
+      <div class="note"><b>Watch out for copies.</b> Over 1,800 people have made their own copy of Rakazo, called a "fork". A fork shows <i>forked from elie222/rakazo</i> under its name. Forks can be out of date or changed, so download apps only from the official repo.</div>
+      <div class="table-wrap">
+        <table>
+          <caption class="small">Repo facts on 28 Nov 2026</caption>
+          <tbody>
+            <tr><th scope="row">Address</th><td><code>github.com/elie222/rakazo</code></td></tr>
+            <tr><th scope="row">License</th><td>Apache-2.0 (free and open source)</td></tr>
+            <tr><th scope="row">Latest version</th><td>v0.16.0, released 24 Nov 2026</td></tr>
+            <tr><th scope="row">Stars / forks</th><td>About 10,000 / 1,800</td></tr>
+            <tr><th scope="row">Main language</th><td>TypeScript</td></tr>
+            <tr><th scope="row">Started</th><td>August 2026</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="need">
+      <h2>2. What do you need from GitHub?</h2>
+      <p>Most people only need one part of the repo. Find your goal below and jump straight to it.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">I want to…</th><th scope="col">Go to</th><th scope="col">GitHub account?</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Try Rakazo without installing anything</th><td>The hosted app at <code>app.rakazo.com</code> (not GitHub)</td><td>No</td></tr>
+            <tr><th scope="row">Install the app on Mac, Windows or Linux</th><td><a href="#desktop">Releases</a></td><td>No</td></tr>
+            <tr><th scope="row">Install the Android app</th><td><a href="#android">Android release</a></td><td>No</td></tr>
+            <tr><th scope="row">Run Rakazo on my own server</th><td><a href="#server">The installer command</a></td><td>No</td></tr>
+            <tr><th scope="row">Change the code or contribute</th><td><a href="#clone">Clone the repo</a></td><td>Only to send changes</td></tr>
+            <tr><th scope="row">Report a bug or ask for a feature</th><td><a href="#help">Issues</a></td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="desktop">
+      <h2>3. Download the desktop app</h2>
+      <p>Ready-made apps for Mac, Windows and Linux are attached to each release. A new version comes out every few days.</p>
+      <h3 class="step-h">Step 1: Open Releases</h3>
+      <p>On the repo page, scroll down the right-hand column to <b>Releases</b> and click the version marked <b>Latest</b>. Or go straight to <code>github.com/elie222/rakazo/releases/latest</code>.</p>
+      <figure class="shot shot-narrow">
+        <a class="zoom" href="/images/rakazo-github/releases-sidebar-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/rakazo-github/releases-sidebar-annotated.webp" width="760" height="330" alt="Annotated screenshot of the repo sidebar. Arrow 1 points to the Releases heading. Arrow 2 points to Rakazo v0.16.0 with a green Latest badge." loading="lazy"></a>
+        <figcaption>The Releases box on the right of the repo page.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Releases</b> lists every version (28 so far).</li>
+        <li><b>The newest version is marked Latest.</b> Always pick this one.</li>
+      </ol>
+      <h3 class="step-h">Step 2: Check you're on the latest version</h3>
+      <figure class="shot">
+        <a class="zoom" href="/images/rakazo-github/latest-release-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/rakazo-github/latest-release-annotated.webp" width="1280" height="240" alt="Annotated screenshot of the Rakazo v0.16.0 release header. Arrow 1 points to the version number and Latest badge. Arrow 2 points to the release date." loading="lazy"></a>
+        <figcaption>The top of the release page.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Version number and the Latest badge.</b> At the time of writing it's v0.16.0.</li>
+        <li><b>Release date.</b> Below it you'll find the release notes: what's new, fixed and changed.</li>
+      </ol>
+      <h3 class="step-h">Step 3: Download the right file</h3>
+      <p>Scroll to the bottom of the release to <b>Assets</b>. There are 15 files, but you only need one.</p>
+      <figure class="shot">
+        <a class="zoom" href="/images/rakazo-github/download-files-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/rakazo-github/download-files-annotated.webp" width="1280" height="710" alt="Annotated screenshot of the v0.16.0 Assets list. Arrow 1 points to Rakazo-0.16.0-universal.dmg for Mac. Arrow 2 points to Rakazo-0.16.0.AppImage for Linux. Arrow 3 points to Rakazo-Setup-0.16.0.exe for Windows." loading="lazy"></a>
+        <figcaption>The Assets list of Rakazo v0.16.0.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Mac:</b> <code>Rakazo-0.16.0-universal.dmg</code> (265 MB). "Universal" means it works on both Apple silicon (M-series) and Intel Macs.</li>
+        <li><b>Linux:</b> <code>Rakazo-0.16.0.AppImage</code> (170 MB).</li>
+        <li><b>Windows:</b> <code>Rakazo-Setup-0.16.0.exe</code> (149 MB).</li>
+      </ol>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">You can ignore</th><th scope="col">What it's for</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><code>.blockmap</code>, <code>latest*.yml</code></th><td>Used by the app to update itself</td></tr>
+            <tr><th scope="row"><code>.sig</code>, <code>SHA256SUMS</code></th><td>Used to check a download wasn't tampered with</td></tr>
+            <tr><th scope="row"><code>-universal-mac.zip</code></th><td>Another Mac format. Use the .dmg instead.</td></tr>
+            <tr><th scope="row"><code>rakazo-server-darwin-arm64…</code></th><td>The server for Apple silicon Macs. The desktop app downloads it for you when needed.</td></tr>
+            <tr><th scope="row">Source code (zip / tar.gz)</th><td>The code, not an app you can install</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3 class="step-h">Step 4: Install and choose a setup</h3>
+      <ol class="plain-steps">
+        <li><b>Mac:</b> open the .dmg and drag Rakazo into Applications.</li>
+        <li><b>Windows:</b> double-click the .exe and follow the installer.</li>
+        <li><b>Linux:</b> make the file runnable with <code>chmod +x Rakazo-*.AppImage</code>, then open it.</li>
+        <li>On first launch the app asks where Rakazo should run. Pick <b>This computer</b> to run everything locally, or <b>Existing instance</b> to connect to a server you already have.</li>
+      </ol>
+      <div class="note"><b>Linux error about libfuse.so.2?</b> Install the FUSE 2 library (<code>libfuse2t64</code> on Ubuntu 24.04, <code>fuse-libs</code> on Fedora), or run <code>./Rakazo-*.AppImage --appimage-extract-and-run</code>. This fix comes from the official README.</div>
+    </section>
+
+    <section id="android">
+      <h2>4. Download the Android app</h2>
+      <p>The Android app has its own release, separate from the desktop versions. Open <code>github.com/elie222/rakazo/releases/tag/android</code> on your phone.</p>
+      <figure class="shot">
+        <a class="zoom" href="/images/rakazo-github/android-apk-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/rakazo-github/android-apk-annotated.webp" width="1280" height="490" alt="Annotated screenshot of the Rakazo for Android release. Arrow 1 points to the rakazo.apk file. Arrow 2 points to the note that it updates itself over the air." loading="lazy"></a>
+        <figcaption>The "Rakazo for Android" release.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Tap <code>rakazo.apk</code></b> (125 MB) to download it.</li>
+        <li><b>You only install it once.</b> After that it updates itself.</li>
+      </ol>
+      <p>When you open the downloaded file, Android may ask you to allow installs from your browser. Allow it for this install, then open Rakazo and sign in to your server or the hosted app.</p>
+      <p class="small">Looking for iPhone or iPad? That app isn't on GitHub Releases. Get it from the Download page on <code>rakazo.com</code>.</p>
+    </section>
+
+    <section id="server">
+      <h2>5. Run Rakazo on a server</h2>
+      <p>You don't need to clone the repo to run Rakazo yourself. The README has a one-line installer that downloads everything it needs. You need Docker (with the Compose plugin), curl and OpenSSL installed first.</p>
+      <div class="codeblock">
+        <pre id="install-cmd"><code>mkdir -p rakazo &amp;&amp; cd rakazo &amp;&amp;
+curl -fsSLO https://raw.githubusercontent.com/elie222/rakazo/main/infra/compose/install-images.sh &amp;&amp;
+bash install-images.sh</code></pre>
+        <button type="button" class="copy" data-copy="install-cmd" aria-label="Copy install command">Copy</button>
+      </div>
+      <p>When it finishes, open <code>http://127.0.0.1:5173</code>, create an account and connect a model. A server with 2 CPU cores and 4 GB of memory is enough, according to the README.</p>
+    </section>
+
+    <section id="clone">
+      <h2>6. Clone or download the code</h2>
+      <p>You only need the code if you want to change Rakazo or help build it. Click the green <b>Code</b> button on the repo page.</p>
+      <figure class="shot">
+        <a class="zoom" href="/images/rakazo-github/code-button-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/rakazo-github/code-button-annotated.webp" width="1280" height="450" alt="Annotated screenshot of the open Code menu. Arrow 1 points to the green Code button. Arrow 2 points to the HTTPS clone address. Arrow 3 points to Download ZIP." loading="lazy"></a>
+        <figcaption>The Code menu on the repo page.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Click Code</b> to open the menu.</li>
+        <li><b>Copy the clone address</b> to download the code with Git.</li>
+        <li><b>Or click Download ZIP</b> to get a copy without Git. It won't update itself, so cloning is better for development.</li>
+      </ol>
+      <p>To clone with Git, run:</p>
+      <div class="codeblock">
+        <pre id="clone-cmd"><code>git clone https://github.com/elie222/rakazo.git
+cd rakazo
+cp .env.example .env</code></pre>
+        <button type="button" class="copy" data-copy="clone-cmd" aria-label="Copy clone commands">Copy</button>
+      </div>
+      <p>To run the code you also need <b>Node.js 24.15 or newer in the 24.x line (or 26+), pnpm 12 and Docker</b>. Node.js 25 is not supported. After filling in the secrets in <code>.env</code> (the README explains each one), start it with <code>pnpm install</code>, <code>pnpm sandbox:build</code> and <code>pnpm dev</code>.</p>
+    </section>
+
+    <section id="map">
+      <h2>7. What's inside the repo</h2>
+      <p>The repo looks big, but you'll only ever open a few parts. Here's what the main folders and files are for.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Folder or file</th><th scope="col">What's in it</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><code>README.md</code></th><td>Start here: features, install steps and links to all docs. Also in Chinese, Japanese and Thai.</td></tr>
+            <tr><th scope="row"><code>docs/</code></th><td>The full guides: self-hosting, models, integrations, backups, upgrading, troubleshooting</td></tr>
+            <tr><th scope="row"><code>CHANGELOG.md</code></th><td>Every change, version by version</td></tr>
+            <tr><th scope="row"><code>SETUP_PROMPT.md</code></th><td>A prompt you can give an AI coding agent so it installs Rakazo for you</td></tr>
+            <tr><th scope="row"><code>.env.example</code></th><td>A template of all settings for running from source</td></tr>
+            <tr><th scope="row"><code>apps/</code></th><td>The programs: <code>web</code>, <code>api</code>, <code>worker</code>, <code>desktop</code>, <code>mobile</code>, <code>cli</code> and the website (<code>www</code>)</td></tr>
+            <tr><th scope="row"><code>packages/</code></th><td>Shared building blocks used by the apps</td></tr>
+            <tr><th scope="row"><code>infra/</code></th><td>Install scripts, Docker Compose files and computer images</td></tr>
+            <tr><th scope="row"><code>examples/plugins/</code></th><td>Sample plugins to learn from</td></tr>
+            <tr><th scope="row"><code>CONTRIBUTING.md</code>, <code>SECURITY.md</code></th><td>How to help build Rakazo, and how to report security problems</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">Tip: press <kbd>t</kbd> on any GitHub repo page to search for a file by name, such as <code>self-host.md</code>.</p>
+    </section>
+
+    <section id="updates">
+      <h2>8. Stay up to date</h2>
+      <p>Rakazo changes fast. Versions 0.13 to 0.16 all came out between 18 and 24 November 2026. Two clicks keep you informed. Both need a free GitHub account.</p>
+      <ol class="plain-steps">
+        <li><b>Star the repo.</b> Click <b>Star</b> at the top right. It saves the repo to your stars list so you can find it again.</li>
+        <li><b>Get an email for each release.</b> Click <b>Watch</b> (shown as <b>Notifications</b> when you're signed out), choose <b>Custom</b>, tick <b>Releases</b> and click <b>Apply</b>.</li>
+      </ol>
+      <p>The desktop and Android apps update themselves, so you don't need to re-download them by hand. On a server, follow the official upgrading guide in the repo at <code>docs/self-host-upgrading.md</code>.</p>
+    </section>
+
+    <section id="help">
+      <h2>9. Get help and report bugs</h2>
+      <p>Rakazo uses GitHub Issues for bugs and feature requests. Someone may already have your problem, so always search first.</p>
+      <figure class="shot">
+        <a class="zoom" href="/images/rakazo-github/issues-search-annotated.webp" target="_blank" rel="noopener" title="Open full-size screenshot"><img src="/images/rakazo-github/issues-search-annotated.webp" width="1280" height="530" alt="Annotated screenshot of the Rakazo Issues page with gmail typed in the search box. Arrow 1 points to the search box. Arrow 2 points to the green New issue button." loading="lazy"></a>
+        <figcaption>Searching Issues for "gmail" finds 25 results.</figcaption>
+      </figure>
+      <ol class="callouts">
+        <li><b>Search first.</b> Type a word from your problem after <code>is:issue</code>, such as <code>gmail</code> or <code>docker</code>. Open and closed issues both show, and closed ones often contain the fix.</li>
+        <li><b>No match? Click New issue.</b> You'll need to sign in to GitHub.</li>
+      </ol>
+      <p>When you click <b>New issue</b>, pick the form that fits:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Form</th><th scope="col">Use it when</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Bug</th><td>Something in Rakazo doesn't work as it should</td></tr>
+            <tr><th scope="row">Feature</th><td>You want something new added</td></tr>
+            <tr><th scope="row">Self-host setup</th><td>Rakazo won't install or start on your own machine or server</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>For setup problems, include the command you ran, the full error and your Rakazo version. If Rakazo starts, the form asks for this diagnostics report, which contains no secrets:</p>
+      <div class="codeblock">
+        <pre id="diag-cmd"><code>docker compose -f docker-compose.images.yml exec api node dist/cli/diagnostics.js</code></pre>
+        <button type="button" class="copy" data-copy="diag-cmd" aria-label="Copy diagnostics command">Copy</button>
+      </div>
+      <div class="note warn"><b>Never paste your <code>.env</code> file or API keys into an issue.</b> Issues are public. For security problems, email <code>security@rakazo.com</code> and don't open an issue. For general questions, email <code>support@rakazo.com</code> or ask in the Rakazo Discord, which is linked from the README.</div>
+    </section>
+
+    <section id="license">
+      <h2>10. What the license lets you do</h2>
+      <p>Rakazo uses the <b>Apache-2.0</b> license, one of the most permissive open-source licenses.</p>
+      <div class="fit">
+        <div class="fit-col good">
+          <h3>You can</h3>
+          <ul>
+            <li>Use it for free, including for work and business</li>
+            <li>Change the code</li>
+            <li>Share your changed version</li>
+          </ul>
+        </div>
+        <div class="fit-col meh">
+          <h3>You must</h3>
+          <ul>
+            <li>Keep the LICENSE and NOTICE files when you share it</li>
+            <li>Say which files you changed</li>
+            <li>Not use the Rakazo name in a way that suggests it's official</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <details><summary>What is the official Rakazo GitHub repo?</summary><p>It's <code>github.com/elie222/rakazo</code>. Other accounts that show a copy of Rakazo are forks.</p></details>
+      <details><summary>Do I need a GitHub account to use Rakazo?</summary><p>No. You can read the code, download the apps and run the installer without signing in. You only need an account to star the repo, watch for releases or open an issue.</p></details>
+      <details><summary>Which file should I download for my Mac?</summary><p>The file ending in <code>-universal.dmg</code>. It works on both Apple silicon (M-series) and Intel Macs.</p></details>
+      <details><summary>Where is the iPhone app?</summary><p>The iPhone and iPad app isn't on GitHub Releases. Get it from the Download page on rakazo.com.</p></details>
+      <details><summary>What's the difference between the repo and rakazo.com?</summary><p>The repo holds the code, app downloads and bug reports. rakazo.com is the official website with the hosted app, the docs and pricing.</p></details>
+      <details><summary>How do I report a security problem?</summary><p>Email <code>security@rakazo.com</code>. Don't open a public GitHub issue for security bugs.</p></details>
+    </section>
+
+    <section class="next">
+      <h2>What to read next</h2>
+      <div class="grid next-grid">
+        <a class="post link-card" href="/what-is-rakazo/"><span class="tag">Basics</span><h3>What is Rakazo?</h3><p>The beginner's guide to what Rakazo does.</p></a>
+        <a class="post link-card" href="/#install"><span class="tag">Install</span><h3>Install Rakazo in 3 steps</h3><p>The quick-start install with one command.</p></a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="/"><span class="logo" aria-hidden="true">R</span><span>Rakazo<span class="muted">Guide</span></span></a>
+      <p class="small">Beginner-friendly guides to Rakazo, the open-source AI bot. Screenshots are of public pages, annotated for teaching.</p>
+    </div>
+    <ul>
+      <li><a href="/what-is-rakazo/">What is Rakazo?</a></li>
+      <li><a href="/rakazo-github/">Rakazo on GitHub</a></li>
+      <li><a href="https://rakazo.com" rel="noopener" target="_blank">Official site</a></li>
+      <li><a href="https://github.com/elie222/rakazo" rel="noopener" target="_blank">GitHub repo</a></li>
+    </ul>
+  </div>
+<div class="footer-bar"><div class="wrap"><span>© 2026 rakazo.org</span><span>Independent guide, not affiliated with Rakazo</span></div></div>
+</footer>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = document.getElementById(b.dataset.copy).textContent;
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () {
+      b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1600);
+    }).catch(function () {});
+  });
+});
+</script>
+</body>
+</html>

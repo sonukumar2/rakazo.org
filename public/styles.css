@@ -206,3 +206,16 @@ nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
 .footer-bar .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 20px; font-size: .86rem; color: var(--muted); }
 .site-footer.bare { padding-top: 0; }
 .site-footer.bare .footer-bar { margin-top: 0; }
+.step-h { font-size: 1.12rem; margin: 26px 0 8px; }
+.plain-steps { padding-left: 22px; margin: 8px 0 12px; }
+.plain-steps li { margin-bottom: 8px; }
+.codeblock { position: relative; background: var(--code-bg); border-radius: 12px; margin: 14px 0 16px; }
+.codeblock pre { margin: 0; padding: 16px 84px 16px 18px; overflow-x: auto; }
+.codeblock code { background: none; color: var(--code-text); padding: 0; font-size: .84rem; line-height: 1.7; white-space: pre; }
+.codeblock .copy { position: absolute; top: 10px; right: 10px; }
+.note.warn { border-left-color: #dc2626; background: color-mix(in srgb, #dc2626 9%, var(--surface)); }
+.article .note { margin: 18px 0; }
+kbd { font-family: "JetBrains Mono", monospace; font-size: .82em; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; padding: 1px 6px; background: var(--surface); }
+caption { text-align: left; padding: 10px 18px 0; }
+.article p a, .article li a, .article td a { overflow-wrap: anywhere; }
+.article code { overflow-wrap: anywhere; }
